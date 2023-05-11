@@ -1,0 +1,14 @@
+import datetime
+import time
+
+reminder_date = datetime.date(2035, 5, 7)
+reminder_time = datetime.time(10, 0, 0) # set the time to 10:00 AM
+
+while True:
+    current_date = datetime.date.today()
+    current_time = datetime.datetime.now().time()
+    if current_date == reminder_date and current_time >= reminder_time:
+        print("It's time to send the reminder email!")
+        # Add your code here to send the reminder email
+        break
+    time.sleep(60) # wait for 1 minute and check again
