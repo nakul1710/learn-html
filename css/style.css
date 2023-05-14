@@ -1,0 +1,14 @@
+.odd {
+    background-color: blue;
+    color: black
+} 
+
+.even {
+    background-color: pink;
+    color: white
+} 
+
+
+#uid {
+    font-size: 50px;
+}
