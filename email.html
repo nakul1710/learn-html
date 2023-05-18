@@ -1,14 +1,89 @@
-import datetime
-import time
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        a {
+            text-align: center;
+        }
+      body {
+        margin: 0;
+      }
 
-reminder_date = datetime.date(2035, 5, 7)
-reminder_time = datetime.time(10, 0, 0) # set the time to 10:00 AM
+      .title {
+        background-color: black;
+        padding: 10px;
+        text-align: center;
+      }
 
-while True:
-    current_date = datetime.date.today()
-    current_time = datetime.datetime.now().time()
-    if current_date == reminder_date and current_time >= reminder_time:
-        print("It's time to send the reminder email!")
-        # Add your code here to send the reminder email
-        break
-    time.sleep(60) # wait for 1 minute and check again
+      .navbar {
+       background-color: green;
+       display: grid;
+      }
+
+      .nav {
+        list-style-type: none;
+        background-color: green;
+      }
+      .nav ul  {
+        text-align: center;
+        margin:0;
+      }
+      .nav li a {
+        color: black;
+        background-color: grey;
+        padding: 14px 16px;
+        float: left;
+        display: block;
+        margin:0;
+      }
+
+      .nav li a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .div:hover {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+            <div class="title">
+                     <img src="./img/logo.png" width="140px" height="140px">
+                    <h1 style="color:white">Book Buddy</h1>
+            </div>
+            <nav class="navbar">
+                <ul style="text-align: center;"class="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+    </header>
+    
+     <img src="./img/pexels-photo-1467300.jpeg" alt="dubai buraj khalifa" width="100%" height="500px">
+    <h1  style="text-align: center;">Features</h1>
+    <div class="row">
+      <div class="coloumn">
+        <h2>Watercool</h2>
+        <p> Book buddy has its own water cooler system.</p>
+      </div>
+      <div class="coloumn">
+        <h1>Parking area</h1>
+        <p>Book buddy has its own parking area.in which almost 70 bikes can park.</p>
+      </div>
+      <div class="coloumn">
+        <h1>Personal sitting table</h1>
+        <p>Library has its own furnitures.in which student can study.</p>
+      </div>
+    </div>
+
+     
+     <div class="div:hover" style="background-color:green; color:white; padding:25px; text-align:center;">Join Taday just rupees 300/-</div>
+
+  </body>
+</html>
